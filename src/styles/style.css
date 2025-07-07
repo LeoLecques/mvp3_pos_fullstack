@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inria Serif', serif;
+  background-color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-inicial {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #24252A;
+  color: white;
+  height: 100px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.cabecalho h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-family: 'Inria Serif', serif;
+  margin: 0;
+}
+
+.conteudo-principal {
+  padding: 2rem;
+  margin-top: 1rem; /* Reduza isso para subir o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opcoes-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.card-opcao {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 30px 40px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-opcao:hover {
+  transform: scale(1.05);
+}
+
+.icone-opcao {
+  font-size: 3rem;
+}
+
+.titulo-opcao {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.rodape {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #555;
+  font-family: 'Inria Serif', serif;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.conversor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.moeda-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+}
+
+.moeda-bloco select {
+  padding: 12px;
+  font-size: 1.1rem;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #bfbfbf;
+  font-weight: bold;
+}
+
+.moeda-bloco input {
+  padding: 12px;
+  font-size: 1.1rem;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.flag {
+  width: 140px;
+  height: auto;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.seta {
+  font-size: 2.5rem;
+  margin-top: 60px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.botao-voltar {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
+  color: white;
+  font-family: 'Inria Serif', serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+
+.seta-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.seta {
+  font-size: 2.5rem;
+  color: #1B9A72;
+}
+
+.tabela-historico {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  width: 80%;
+}
+
+.tabela-historico th,
+.tabela-historico td {
+  border: 1px solid #000;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.tabela-historico th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.centro-cotar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.botao-cotar {
+  background-color: #1B9A72;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  transition: background-color 0.3s;
+}
+
+.botao-cotar:hover {
+  background-color: #146c51;
+}
+
+.mensagem-erro {
+  color: red;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao-voltar-home {
+  margin-bottom: 30px;
+}
+
+.input-erro {
+  border: 2px solid red;
+}
+
+.mensagem-erro {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
