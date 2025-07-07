@@ -11,7 +11,7 @@ O projeto é um conversor de moedas com três páginas principais:
 - Links para as páginas de Conversão e Histórico.
 
 ### 2. Página de Conversão (`Conversor`)
-- Permite ao usuário escolher moedas de entrada e saída, digitar um valor e obter a conversão com base na API AwesomeAPI.
+- Permite ao usuário escolher moedas de entrada e saída, digitar um valor e obter a conversão com base na API AwesomeAPI. (https://docs.awesomeapi.com.br/api-de-moedas | Endpoint: https://economia.awesomeapi.com.br/json/last/:moedas)
 - Mostra bandeiras das moedas envolvidas.
 - O botão “Cotar” realiza a consulta à API e armazena a conversão no `localStorage`.
 - Validação de formulário: impede valores vazios ou zero.
